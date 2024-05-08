@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_header"
+            android:title=""
+            android:actionLayout="@layout/menu_header_layout"
+            android:visible="true"/>
+        <item
+            android:id="@+id/nav_createTrip"
+            android:title="Create Trip Alert" />
+
+        <item
+            android:id="@+id/nav_userProf"
+            android:title="User Profile" />
+        <item
+            android:id="@+id/nav_steps"
+            android:title="My Rides"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+    </group>
+</menu>

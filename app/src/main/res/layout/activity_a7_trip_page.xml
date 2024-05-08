@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A7_TripPage"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Include the custom toolbar -->
+        <include
+            layout="@layout/a4_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- TextView for displaying the from location -->
+            <TextView
+                android:id="@+id/fromLocationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textSize="20sp"
+                android:text="From Location: New York"
+                />
+
+            <!-- TextView for displaying the to location -->
+            <TextView
+                android:id="@+id/toLocationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fromLocationTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:text="To Location: Los Angeles"
+                />
+
+            <!-- TextView for displaying the date -->
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toLocationTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:text="Date: May 15, 2024"
+                />
+
+            <!-- TextView for displaying the time -->
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dateTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:text="Time: 08:00 AM"
+                />
+
+            <!-- TextView for displaying the seats -->
+            <TextView
+                android:id="@+id/seatsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timeTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:text="Seats: 3"
+                />
+
+            <!-- TextView for displaying the price per seat -->
+            <TextView
+                android:id="@+id/pricePerSeatTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seatsTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:text="Price Per Seat: $30"
+                />
+
+            <!-- TextView for displaying the car facilities -->
+            <TextView
+                android:id="@+id/carFacilitiesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pricePerSeatTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:text="Car Facilities: Spacious, Air-conditioned"
+                />
+
+            <!-- TextView for displaying the creator email -->
+            <TextView
+                android:id="@+id/createdByEmailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carFacilitiesTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:text="Created By: example@example.com"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Route"
+                android:layout_below="@id/createdByEmailTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:id="@+id/btnViewRoute"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Join Ride"
+                android:layout_below="@id/btnViewRoute"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:id="@+id/btnJoinTrip"/>
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

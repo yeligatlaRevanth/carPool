@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Provide Ride Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provide Ride"
+        android:textSize="28sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- From Location Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_from_location"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_from_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:drawablePadding="8dp"
+            android:hint="From Location"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- To Location Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_to_location"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_to_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:drawablePadding="8dp"
+            android:hint="To Location"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Date and Time Inputs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_date"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:hint="Date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:drawableStart="@drawable/ic_baseline_date_range_24"
+                android:drawablePadding="8dp"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_time"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Time">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:drawableStart="@drawable/ic_baseline_access_time_24"
+                android:drawablePadding="8dp"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Number of Seats Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_seats"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Number of Seats">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_seats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:drawableStart="@drawable/ic_baseline_airline_seat_recline_normal_24"
+            android:drawablePadding="8dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Price Per Seat Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_price_per_seat"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:hint="Price Per Seat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_price_per_seat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="Rs."
+            android:drawablePadding="8dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_car_facilities"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:hint="Facilities Provided">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_car_facilities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Create Ride Button -->
+    <Button
+        android:id="@+id/btn_create_ride"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:text="Create Ride"/>
+
+</LinearLayout>

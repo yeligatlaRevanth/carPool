@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A4_HomePage"
+    android:orientation="vertical">
+
+
+
+    <!-- Description: Choose Your Ride Option -->
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Ride Option"
+        android:textSize="20sp"
+        android:textFontWeight="700"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Image Button: Find a Ride -->
+
+    <!-- Image Button: Create Ride Alert -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+
+        android:background="@drawable/orange_border"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_find_ride"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Find a Ride"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_search_removebg" />
+
+        <TextView
+            android:id="@+id/text_find_ride"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textFontWeight="900"
+            android:text="Find a Ride"
+            android:textSize= "20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/orange_border">
+
+        <TextView
+            android:id="@+id/text_create_ride_alert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Create Ride Alert"
+            android:textSize="20sp"
+            android:textFontWeight="900"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/btn_create_ride_alert"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_provide_removebg"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:contentDescription="Create Ride Alert"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

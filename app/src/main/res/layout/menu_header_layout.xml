@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:clickable="false"
+        android:id="@+id/navmenu_ImageProfile"
+        app:strokeColor="@android:color/darker_gray"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        android:src="@drawable/userimage_placeholder"
+        android:layout_margin="10dp"
+        android:alpha="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navmenu_nameview"
+        android:layout_gravity="center"
+        android:text="Testing"
+        android:textSize="20dp"
+        android:fontFamily="@font/baskervville"
+        android:textFontWeight="800"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height= "1dp"
+        android:background="#BDBDBD"
+        android:layout_marginTop="4dp"
+        android:layout_margin="12dp"/>
+
+
+</LinearLayout>
